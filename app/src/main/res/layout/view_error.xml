@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_error"
+    android:padding="28dp">
+
+    <ImageView
+        android:id="@+id/errorIcon"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:contentDescription="@string/page_error_title"
+        android:src="@drawable/ic_wifi_off"
+        app:layout_constraintBottom_toTopOf="@id/errorTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/errorTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="@string/no_internet_title"
+        android:textColor="@color/tsu_gold"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/errorMessage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/errorIcon" />
+
+    <TextView
+        android:id="@+id/errorMessage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:lineSpacingExtra="4dp"
+        android:text="@string/no_internet_message"
+        android:textColor="#C9D4E5"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@id/retryButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/errorTitle" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/retryButton"
+        style="@style/Widget.TSU.GoldButton"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/retry"
+        app:layout_constraintBottom_toTopOf="@id/homeButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/errorMessage"
+        app:layout_constraintWidth_max="320dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/homeButton"
+        style="@style/Widget.TSU.OutlineButton"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/go_home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/retryButton"
+        app:layout_constraintStart_toStartOf="@id/retryButton"
+        app:layout_constraintTop_toBottomOf="@id/retryButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

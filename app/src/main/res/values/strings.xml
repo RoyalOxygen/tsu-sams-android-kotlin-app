@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TSU SAMS</string>
+    <string name="splash_title">TSU SAMS</string>
+    <string name="splash_subtitle">Taraba State University, Jalingo</string>
+    <string name="splash_session">Smart Attendance Management • 2024/2025 Session</string>
+    <string name="no_internet_title">No Internet Connection</string>
+    <string name="no_internet_message">Please check your mobile data or Wi-Fi and try again. The TSU SAMS portal needs an active connection.</string>
+    <string name="page_error_title">Something Went Wrong</string>
+    <string name="page_error_message">We could not load this page. The server may be unavailable or the request timed out.</string>
+    <string name="retry">Try Again</string>
+    <string name="go_home">Go Home</string>
+    <string name="loading">Loading SAMS portal…</string>
+    <string name="camera_permission_needed">Camera permission is required to capture attendance biometrics.</string>
+    <string name="storage_permission_needed">Storage permission is required to upload images.</string>
+    <string name="logo_description">Taraba State University logo</string>
+</resources>

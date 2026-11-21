@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/splashRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_splash"
+    android:padding="24dp">
+
+    <View
+        android:id="@+id/logoRing"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:background="@drawable/logo_ring"
+        app:layout_constraintBottom_toTopOf="@id/titleText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="176dp"
+        android:layout_height="176dp"
+        android:contentDescription="@string/logo_description"
+        android:scaleType="fitCenter"
+        android:src="@drawable/tsu_logo"
+        app:layout_constraintBottom_toBottomOf="@id/logoRing"
+        app:layout_constraintEnd_toEndOf="@id/logoRing"
+        app:layout_constraintStart_toStartOf="@id/logoRing"
+        app:layout_constraintTop_toTopOf="@id/logoRing" />
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:letterSpacing="0.12"
+        android:text="@string/splash_title"
+        android:textAllCaps="true"
+        android:textColor="@color/tsu_gold"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/subtitleText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logoRing" />
+
+    <TextView
+        android:id="@+id/subtitleText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="@string/splash_subtitle"
+        android:textColor="@color/tsu_sky"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@id/progressBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleText" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="36dp"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/tsu_gold"
+        app:layout_constraintBottom_toTopOf="@id/sessionText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/subtitleText" />
+
+    <TextView
+        android:id="@+id/sessionText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:gravity="center"
+        android:text="@string/splash_session"
+        android:textColor="#B8C5D9"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
