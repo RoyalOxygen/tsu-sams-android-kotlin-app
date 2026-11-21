@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#0B1F4B" />
+  <meta name="description" content="TSU SAMS — Taraba State University Student Attendance Management System. Facial biometrics and geofenced lecture attendance for every TSU student, lecturer, and administrator." />
+  <meta name="keywords" content="TSU, Taraba State University, SAMS, attendance management, facial biometric, geofence, lecture attendance, exam capture" />
+  <meta property="og:title" content="TSU SAMS — Smart Attendance, Verified." />
+  <meta property="og:description" content="Facial biometrics and geofenced lecture attendance for Taraba State University. One system for attendance and exam capture." />
+  <meta property="og:image" content="assets/logo.png" />
+  <meta property="og:type" content="website" />
+
+  <title>TSU SAMS — Taraba State University Attendance Management</title>
+
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+  <link rel="apple-touch-icon" href="assets/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="ambient" aria-hidden="true">
+    <div class="ambient-blob ambient-blob--gold"></div>
+    <div class="ambient-blob ambient-blob--blue"></div>
+    <div class="ambient-grid"></div>
+    <div class="ambient-noise"></div>
+  </div>
+
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#top" aria-label="TSU SAMS home">
+        <span class="brand-mark">
+          <img src="assets/logo.png" alt="Taraba State University logo" width="44" height="44" />
+        </span>
+        <span class="brand-copy">
+          <strong>TSU SAMS</strong>
+          <span>Attendance Management</span>
+        </span>
+      </a>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#features">Features</a>
+        <a href="#how">How It Works</a>
+        <a href="#apps">Our Apps</a>
+        <a href="#security">Security</a>
+        <a href="#faq">FAQ</a>
+      </div>
+
+      <a class="btn btn-ghost nav-cta" href="#download">
+        <span>Get the App</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+          <polyline points="7 10 12 15 17 10" />
+          <line x1="12" y1="15" x2="12" y2="3" />
+        </svg>
+      </a>
+
+      <button class="nav-burger" id="navBurger" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <section class="hero container">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <div class="eyebrow">
+          <span class="eyebrow-dot"></span>
+          Official ICT Directorate • TSU SAMS
+        </div>
+
+        <h1 class="hero-title">
+          Smart attendance.<br />
+          <span class="accent">Verified.</span>
+        </h1>
+
+        <p class="hero-sub">
+          Facial biometrics and geofenced lecture attendance for every Taraba
+          State University student. TSU SAMS replaces paper registers with
+          secure, real-time verification — from lecture hall to exam hall.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary btn-lg" href="#download">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" y1="15" x2="12" y2="3" />
+            </svg>
+            Download for Android
+          </a>
+          <a class="btn btn-secondary btn-lg" href="https://sams.tsuniversity.edu.ng/" target="_blank" rel="noopener">
+            Open SAMS Portal
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M7 17L17 7M17 7H8M17 7V16" />
+            </svg>
+          </a>
+        </div>
+
+        <ul class="hero-trust">
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D4A017" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M12 2l7 4v6c0 5-3 8-7 10-4-2-7-5-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg>
+            Secured by TSU ICT
+          </li>
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D4A017" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            Geofenced capture
+          </li>
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D4A017" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 22h8M12 18v4"/></svg>
+            Android 7.0+
+          </li>
+        </ul>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="phone-glow"></div>
+        <div class="phone-frame">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <div class="sams-topbar">
+              <div class="sams-brand">
+                <span class="sams-brand-mark">
+                  <img src="assets/logo.png" alt="" width="22" height="22" />
+                </span>
+                <span class="sams-brand-text">
+                  <strong>TSU-SAMS</strong>
+                  <small>Taraba State University</small>
+                </span>
+              </div>
+              <span class="sams-avatar">TS</span>
+            </div>
+
+            <div class="sams-body">
+              <div class="sams-welcome">
+                <div class="sams-logo-lg">
+                  <img src="assets/logo.png" alt="" width="44" height="44" />
+                </div>
+                <p class="sams-uni">Taraba State University, Jalingo</p>
+                <span class="sams-badge">Smart Attendance Management System</span>
+                <p class="sams-sub">Facial biometrics and geofenced lecture attendance</p>
+              </div>
+
+              <div class="sams-hero-card">
+                <img src="assets/sams-hero.webp" alt="" />
+              </div>
+
+              <a class="sams-btn sams-btn--primary" href="#download">
+                <span>＋</span> Get started / Register
+              </a>
+              <a class="sams-btn sams-btn--outline" href="#download">
+                <span>◉</span> Student face login
+              </a>
+              <a class="sams-btn sams-btn--outline" href="#download">
+                <span>→</span> Student password login
+              </a>
+
+              <div class="sams-roles">
+                <a href="#download">Lecturer</a>
+                <span>•</span>
+                <a href="#download">Admin</a>
+                <span>•</span>
+                <a href="#faq">Helpdesk</a>
+              </div>
+
+              <p class="sams-footer-note">
+                Secured by Taraba State University ICT<br />
+                2024/2025 Academic Session • v1.0.0
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="floating-chip floating-chip--a">
+          <span class="chip-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0B1F4B" stroke-width="2.5" stroke-linecap="round"><path d="M12 2l7 4v6c0 5-3 8-7 10-4-2-7-5-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg></span>
+          <span class="chip-text"><strong>Face Match</strong><span>Attendance verified</span></span>
+        </div>
+
+        <div class="floating-chip floating-chip--b">
+          <span class="chip-icon chip-icon--gold"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#D4A017" stroke-width="2.5" stroke-linecap="round"><path d="M13 2L3 14h8l-1 8 10-12h-8z"/></svg></span>
+          <span class="chip-text"><strong>Geofence Active</strong><span>Capture in-range only</span></span>
+        </div>
+
+        <div class="floating-chip floating-chip--c">
+          <span class="chip-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0B1F4B" stroke-width="2.5" stroke-linecap="round"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 22h8"/></svg></span>
+          <span class="chip-text"><strong>Live Dashboard</strong><span>Attendance in real time</span></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats container" aria-label="Key facts">
+    <div class="stat">
+      <strong>1 scan</strong>
+      <span>to mark attendance</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat">
+      <strong>100%</strong>
+      <span>paperless records</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat">
+      <strong>Geo-locked</strong>
+      <span>on-campus capture</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat">
+      <strong>24 / 7</strong>
+      <span>secure access</span>
+    </div>
+  </section>
+
+  <section class="section container" id="features">
+    <div class="section-head">
+      <span class="section-kicker">What's inside</span>
+      <h2 class="section-title">Built for every TSU classroom.</h2>
+      <p class="section-sub">One platform for students, lecturers, and administrators — from lecture attendance to exam biometric capture.</p>
+    </div>
+
+    <div class="feature-grid">
+      <article class="card">
+        <div class="card-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+        </div>
+        <h3>Facial biometric attendance</h3>
+        <p>Students mark attendance with a face scan. The system matches biometrics against the enrolled record in under two seconds.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon card-icon--gold">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <h3>Geofenced capture</h3>
+        <p>Attendance only counts when a student is physically inside the lecture venue. Location is validated against the course geofence.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18M8 14h.01M12 14h.01M16 14h.01"/></svg>
+        </div>
+        <h3>Real-time dashboards</h3>
+        <p>Lecturers and admins see attendance live. Daily, weekly, and course-level summaries with no manual collation.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon card-icon--gold">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+        </div>
+        <h3>Offline-resilient</h3>
+        <p>Weak network in the hall? The app shows a clear offline state and retries automatically the moment you're back online.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l7 4v6c0 5-3 8-7 10-4-2-7-5-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg>
+        </div>
+        <h3>Role-based access</h3>
+        <p>Students, lecturers, admins, and helpdesk each get tailored views. Every action is tied to the correct account and permissions.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon card-icon--gold">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        </div>
+        <h3>University-grade security</h3>
+        <p>HTTPS end-to-end, scoped camera access, and controlled biometric storage on TSU infrastructure. No third-party tracking.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section section--alt container" id="how">
+    <div class="section-head">
+      <span class="section-kicker">How it works</span>
+      <h2 class="section-title">From enrollment to attendance.</h2>
+      <p class="section-sub">Three steps. Under two minutes. No technical knowledge needed.</p>
+    </div>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">01</div>
+        <div class="step-body">
+          <h3>Register &amp; enroll</h3>
+          <p>Get the official TSU SAMS app. Register with your student details and capture a clear biometric enrollment once.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-num">02</div>
+        <div class="step-body">
+          <h3>Scan at the lecture</h3>
+          <p>Inside the venue, open the app and face the camera. Geofence confirms you're in range and attendance is recorded instantly.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-num">03</div>
+        <div class="step-body">
+          <h3>Track &amp; verify</h3>
+          <p>Lecturers see live attendance. Students review their own record. Exam capture uses the same verified biometric at exam entry.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="cta-strip">
+      <div>
+        <strong>Ready to join SAMS?</strong>
+        <span>Enroll once. Attend, verify, and sit exams with confidence.</span>
+      </div>
+      <a class="btn btn-primary" href="#download">
+        Get TSU SAMS
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <section class="section container" id="apps">
+    <div class="section-head">
+      <span class="section-kicker">One university, two apps</span>
+      <h2 class="section-title">Attendance. Exams. Covered.</h2>
+      <p class="section-sub">TSU SAMS is the main attendance system. Exam Capture is the biometric exam companion — both share the same student verification.</p>
+    </div>
+
+    <div class="apps-grid">
+      <article class="app-card app-card--featured">
+        <div class="app-badge">Main system</div>
+        <div class="app-icon">
+          <img src="assets/logo.png" alt="TSU SAMS logo" width="48" height="48" />
+        </div>
+        <h3>TSU SAMS</h3>
+        <p class="app-desc">Student Attendance Management System — facial biometrics and geofenced lecture attendance for every course.</p>
+        <ul class="app-list">
+          <li><span class="check"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#0B1F4B" stroke-width="3.5" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg></span> Lecture attendance</li>
+          <li><span class="check"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#0B1F4B" stroke-width="3.5" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg></span> Geofence validation</li>
+          <li><span class="check"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#0B1F4B" stroke-width="3.5" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg></span> Student, lecturer &amp; admin</li>
+        </ul>
+        <a class="btn btn-primary btn-block" href="#download">Download SAMS</a>
+        <a class="app-portal" href="https://sams.tsuniversity.edu.ng/" target="_blank" rel="noopener">Open web portal →</a>
+      </article>
+
+      <article class="app-card">
+        <div class="app-badge app-badge--gold">Exam companion</div>
+        <div class="app-icon app-icon--gold">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+        </div>
+        <h3>TSU Exam Capture</h3>
+        <p class="app-desc">Biometric exam verification — enroll your face once and clear invigilation instantly at every exam.</p>
+        <ul class="app-list">
+          <li><span class="check"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#0B1F4B" stroke-width="3.5" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg></span> Exam face capture</li>
+          <li><span class="check"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#0B1F4B" stroke-width="3.5" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg></span> Camera or gallery upload</li>
+          <li><span class="check"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#0B1F4B" stroke-width="3.5" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg></span> Shares SAMS verification</li>
+        </ul>
+        <a class="btn btn-secondary btn-block" href="https://sams.tsuniversity.edu.ng/exam-capture/public/" target="_blank" rel="noopener">Open Exam Capture</a>
+        <a class="app-portal" href="#download">Get Exam Capture APK →</a>
+      </article>
+    </div>
+  </section>
+
+  <section class="section container" id="security">
+    <div class="security-grid">
+      <div class="security-copy">
+        <span class="section-kicker">Trust &amp; security</span>
+        <h2 class="section-title">Your face is your ID.<br />We protect it that way.</h2>
+        <p class="section-sub">
+          Attendance integrity depends on identity certainty. TSU SAMS is operated
+          by the ICT Directorate on university-controlled infrastructure, with
+          access limited to authorized lecturers, invigilators, and administrators.
+        </p>
+
+        <ul class="check-list">
+          <li>
+            <span class="check"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#0B1F4B" stroke-width="3.5" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg></span>
+            Encrypted transport (HTTPS) for every request
+          </li>
+          <li>
+            <span class="check"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#0B1F4B" stroke-width="3.5" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg></span>
+            Geofence ensures attendance is on-campus only
+          </li>
+          <li>
+            <span class="check"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#0B1F4B" stroke-width="3.5" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg></span>
+            Camera access only when you initiate a scan
+          </li>
+          <li>
+            <span class="check"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#0B1F4B" stroke-width="3.5" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg></span>
+            No third-party ad tracking or data resale
+          </li>
+        </ul>
+      </div>
+
+      <div class="security-visual">
+        <div class="security-card">
+          <div class="security-badge">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#D4A017" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l7 4v6c0 5-3 8-7 10-4-2-7-5-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg>
+            <strong>Official &amp; Verified</strong>
+          </div>
+          <div class="security-ring">
+            <div class="security-ring-inner">
+              <strong>TSU</strong>
+              <span>ICT Secured</span>
+            </div>
+          </div>
+          <p>Operated by the Taraba State University ICT Directorate for the 2024/2025 academic session.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section download-section container" id="download">
+    <div class="download-card">
+      <div class="download-glow" aria-hidden="true"></div>
+      <div class="download-copy">
+        <div class="eyebrow eyebrow--light">
+          <span class="eyebrow-dot"></span>
+          Official Android App
+        </div>
+        <h2 class="download-title">Get the app.<br /><span>Be attendance-ready.</span></h2>
+        <p class="download-sub">
+          Free download. Official TSU build. Install once and you're set for the entire semester.
+        </p>
+
+        <div class="download-actions">
+          <a class="btn btn-primary btn-xl" href="#download" id="downloadBtn">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download SAMS for Android
+          </a>
+          <a class="btn btn-secondary btn-xl" href="https://sams.tsuniversity.edu.ng/" target="_blank" rel="noopener">
+            Use Web Portal Instead
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg>
+          </a>
+        </div>
+
+        <div class="download-meta">
+          <span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M11 18h2"/></svg> Android 7.0+</span>
+          <span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2l7 4v6c0 5-3 8-7 10-4-2-7-5-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg> Verified official</span>
+          <span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> Free forever</span>
+        </div>
+      </div>
+
+      <div class="download-visual" aria-hidden="true">
+        <div class="qr-card">
+          <div class="qr">
+            <svg width="120" height="120" viewBox="0 0 120 120" fill="#0B1F4B" aria-hidden="true">
+              <rect x="0" y="0" width="120" height="120" rx="12" fill="#0B1F4B"/>
+              <g fill="#fff">
+                <rect x="14" y="14" width="28" height="28" rx="3"/>
+                <rect x="78" y="14" width="28" height="28" rx="3"/>
+                <rect x="14" y="78" width="28" height="28" rx="3"/>
+                <g fill="#0B1F4B"><rect x="20" y="20" width="16" height="16" rx="2"/><rect x="84" y="20" width="16" height="16" rx="2"/><rect x="20" y="84" width="16" height="16" rx="2"/></g>
+              </g>
+              <g fill="#fff">
+                <rect x="50" y="14" width="8" height="8"/><rect x="62" y="14" width="8" height="8"/>
+                <rect x="50" y="26" width="8" height="8"/><rect x="64" y="26" width="8" height="8"/>
+                <rect x="14" y="50" width="8" height="8"/><rect x="26" y="50" width="8" height="8"/>
+                <rect x="38" y="50" width="8" height="8"/><rect x="50" y="50" width="8" height="8"/>
+                <rect x="62" y="50" width="8" height="8"/><rect x="74" y="50" width="8" height="8"/>
+                <rect x="86" y="50" width="8" height="8"/><rect x="98" y="50" width="8" height="8"/>
+                <rect x="14" y="62" width="8" height="8"/><rect x="38" y="62" width="8" height="8"/>
+                <rect x="50" y="62" width="8" height="8"/><rect x="86" y="62" width="8" height="8"/>
+                <rect x="98" y="62" width="8" height="8"/>
+                <rect x="14" y="74" width="8" height="8"/><rect x="26" y="74" width="8" height="8"/>
+                <rect x="50" y="74" width="8" height="8"/><rect x="62" y="74" width="8" height="8"/>
+                <rect x="86" y="74" width="8" height="8"/>
+                <rect x="50" y="86" width="8" height="8"/><rect x="62" y="86" width="8" height="8"/>
+                <rect x="74" y="86" width="8" height="8"/><rect x="86" y="86" width="8" height="8"/>
+                <rect x="98" y="86" width="8" height="8"/>
+                <rect x="50" y="98" width="8" height="8"/><rect x="74" y="98" width="8" height="8"/>
+              </g>
+            </svg>
+          </div>
+          <p>Scan to open SAMS</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section container" id="faq">
+    <div class="section-head">
+      <span class="section-kicker">Questions</span>
+      <h2 class="section-title">Answers before you enroll.</h2>
+      <p class="section-sub">Everything students ask about TSU SAMS.</p>
+    </div>
+
+    <div class="faq">
+      <details>
+        <summary>Is the app free for TSU students?</summary>
+        <p>Yes. TSU SAMS is free to download and use for all Taraba State University students. No hidden fees, ever.</p>
+      </details>
+
+      <details>
+        <summary>Do I need to be on campus to mark attendance?</summary>
+        <p>Yes. Attendance is geofenced — you must be physically inside the lecture venue when you scan. This prevents proxy attendance and keeps records accurate.</p>
+      </details>
+
+      <details>
+        <summary>What is the difference between SAMS and Exam Capture?</summary>
+        <p>SAMS handles lecture attendance with facial biometrics and geofencing. Exam Capture is the exam biometric companion — enroll your face once and verify instantly at exam entry. Both share your student verification.</p>
+      </details>
+
+      <details>
+        <summary>What happens if I have no internet in the lecture hall?</summary>
+        <p>The app detects the offline state instantly and shows a clear message. When connectivity returns it retries automatically. Your enrolled biometric remains valid.</p>
+      </details>
+
+      <details>
+        <summary>Can I use the app on iPhone?</summary>
+        <p>The native app is Android-only for now. iPhone users can access the SAMS web portal at sams.tsuniversity.edu.ng using Safari.</p>
+      </details>
+
+      <details>
+        <summary>Who do I contact for help?</summary>
+        <p>Visit the ICT Directorate at sams.tsuniversity.edu.ng or use the Helpdesk from the portal. TSU SAMS is Secured by Taraba State University ICT Directorate.</p>
+      </details>
+    </div>
+  </section>
+
+  <section class="final-cta container">
+    <div class="final-cta-inner">
+      <span class="final-kicker">Taraba State University, Jalingo</span>
+      <h2>Every lecture counts.<br /><span class="accent">Make yours verified.</span></h2>
+      <p>Enroll once. Attend, verify, and track your attendance in real time.</p>
+      <a class="btn btn-primary btn-xl" href="#download">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Download TSU SAMS
+      </a>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="brand">
+          <span class="brand-mark">
+            <img src="assets/logo.png" alt="Taraba State University logo" width="36" height="36" />
+          </span>
+          <span class="brand-copy">
+            <strong>TSU SAMS</strong>
+            <span>Attendance Management</span>
+          </span>
+        </div>
+        <p>Official Student Attendance Management System for Taraba State University, Jalingo. Secured by the TSU ICT Directorate for the 2024/2025 academic session.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Product</h4>
+        <a href="#features">Features</a>
+        <a href="#how">How It Works</a>
+        <a href="#apps">Our Apps</a>
+        <a href="#security">Security</a>
+        <a href="#download">Download</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Portal</h4>
+        <a href="https://sams.tsuniversity.edu.ng/" target="_blank" rel="noopener">SAMS Portal</a>
+        <a href="https://sams.tsuniversity.edu.ng/register" target="_blank" rel="noopener">Register</a>
+        <a href="https://sams.tsuniversity.edu.ng/student/face-login" target="_blank" rel="noopener">Face Login</a>
+        <a href="#faq">Helpdesk</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Apps</h4>
+        <a href="#download">TSU SAMS</a>
+        <a href="https://sams.tsuniversity.edu.ng/exam-capture/public/" target="_blank" rel="noopener">Exam Capture</a>
+        <a href="https://sams.tsuniversity.edu.ng/login?role=lecturer" target="_blank" rel="noopener">Lecturer</a>
+        <a href="https://sams.tsuniversity.edu.ng/login?role=admin" target="_blank" rel="noopener">Admin</a>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; <span id="year">2024</span> Taraba State University ICT Directorate. All rights reserved.</p>
+      <p>TSU SAMS • 2024/2025 Academic Session • v1.0.0</p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">
+    <div class="toast-icon">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0B1F4B" stroke-width="2.4" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg>
+    </div>
+    <div class="toast-text">
+      <strong id="toastTitle">Download starting…</strong>
+      <span id="toastMsg">If the download doesn't start, use the web portal button.</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "TSU SAMS",
+    "operatingSystem": "Android 7.0+",
+    "applicationCategory": "EducationalApplication",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "NGN" },
+    "description": "Official Taraba State University Student Attendance Management System with facial biometrics and geofenced lecture attendance.",
+    "publisher": { "@type": "Organization", "name": "Taraba State University ICT Directorate" }
+  }
+  </script>
+</body>
+</html>

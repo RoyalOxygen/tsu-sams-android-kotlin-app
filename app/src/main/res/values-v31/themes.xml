@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.TSUExamCapture.Splash" parent="Theme.TSUExamCapture">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@color/tsu_navy</item>
+        <item name="android:windowSplashScreenBackground">@color/tsu_navy</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
+        <item name="android:windowSplashScreenIconBackgroundColor">@color/tsu_navy</item>
+    </style>
+</resources>

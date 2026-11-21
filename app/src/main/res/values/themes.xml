@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.TSUExamCapture" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/tsu_navy</item>
+        <item name="colorPrimaryVariant">@color/tsu_navy_dark</item>
+        <item name="colorOnPrimary">@color/tsu_white</item>
+        <item name="colorSecondary">@color/tsu_gold</item>
+        <item name="colorOnSecondary">@color/tsu_navy_dark</item>
+        <item name="android:statusBarColor">@color/tsu_navy_dark</item>
+        <item name="android:navigationBarColor">@color/tsu_navy_dark</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+        <item name="android:windowBackground">@color/tsu_navy</item>
+    </style>
+
+    <style name="Theme.TSUExamCapture.Splash" parent="Theme.TSUExamCapture">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@color/tsu_navy</item>
+    </style>
+
+    <style name="Widget.TSU.GoldButton" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/tsu_gold</item>
+        <item name="android:textColor">@color/tsu_navy_dark</item>
+        <item name="android:textStyle">bold</item>
+        <item name="cornerRadius">28dp</item>
+    </style>
+
+    <style name="Widget.TSU.OutlineButton" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="strokeColor">@color/tsu_gold</item>
+        <item name="android:textColor">@color/tsu_gold</item>
+        <item name="cornerRadius">28dp</item>
+    </style>
+</resources>
